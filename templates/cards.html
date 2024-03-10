@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> trade </title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css') }}" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="main_box">
+    {% for i in range(1, 51) %}
+        <div class="mini_box">
+            <div class="cards"><h1>товар № {{ i*2-1 }}</h1></div>
+            <div class="cards"><h1>товар № {{ i*2 }}</h1></div>
+        </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
+
